@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CCC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bubblegum+Sans&family=Oswald:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+        <script type="text/javascript">
+			$(document).ready(function()
+			{
+				$(".dropdown").hover(function()
+				{
+					$(".dropdown-menu").toggle()
+				});
+			});
+			
+		</script>
+        <style>
+.bg-img
+{
+	background-image: url("Image/aqua.jpg");
+	background-repeat: no-repeat;
+	
+	background-size: 100% 100%;
+	/* width: 100px ; */
+	height: 650px ;
+
+} 
+body
+{
+	background-image: linear-gradient(to left top, tomato,#0081d5);
+}
+#nist_logo_name
+ {	
+	/* text-decoration-color: 10px; */
+	/* text-align: center; */
+	font-size: 3em;
+	background: linear-gradient(to right,red,yellow,green,blue,orange,blue,purple,yellow,gray);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	font-style: italic;
+	font-family: 'Anton', sans-serif;
+	font-weight: bold;
+	display: flex;
+	margin-left: 20px;
+	letter-spacing: 2px;
+	margin-top:10px;
+}
+
+
+#nist_logo_name:hover
+{
+	transition: 3s;
+	transform: rotate(360deg);
+	transform: scale(2,1);
+	margin-left:20px;
+	background-image: linear-gradient( to left,tomato,aqua,red,blue);
+	-webkit-background-clip:text;
+    -webkit-background-size:500%;
+	animation: animate 5s linear infinite ;
+	background-size: 500%;
+}
+
+#btni-drop
+{
+	background-color: rgb(56, 56, 56);
+}
+span 
+{
+	outline: black;
+	background-color: rgb(243, 239, 239);
+}
+#btni-drop:hover
+{
+	background-color: #0081d5;
+}
+span,span,span:hover
+{
+	background-color: black;
+}
+.bart li a
+{
+	padding: 1px;
+	padding-top: 19px;
+	color: white;
+	margin-left:30px;	
+	/* display: inline-block; */
+
+	
+}
+.bart li a:hover
+{
+	
+	background-color: transparent;
+}
+/* active */
+.bart a:hover, .bart li.selected a 
+{
+	
+	color:#ffc947;
+}
+.bart li a:hover,.bart li.selected a {
+	color: #ffc947;
+}	
+.bart ul li a:hover, .bart ul li.selected a {
+	background-color: #ffc947;
+	color: #241b18;
+}  
+/* .button
+{
+	float: left;
+} */
+
+main
+{
+	width: 100%;
+	position: sticky;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color:wheat;
+}
+
+section h3
+{
+	font-size: 35px;
+	display:block ;
+	font-family:'Josefin Sans', sans-serif;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-shadow:2px 3px 5px black;
+}
+#logo a img 
+{
+	
+	/* float: left; */
+	width: 130px;
+	height: 130px;
+	;
+	
+}
+
+#logo a img:hover
+{
+	transition: 3s;
+	transform: rotate(360deg);
+	transform: scale(-1,1);
+		
+	
+}
+
+section h2
+{
+	font-size: 60px;
+	display: flex;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	color: transparent;
+	font-family:'Anton',sans-serif;
+	text-transform: uppercase;
+	background-image: linear-gradient( to left,tomato,aqua,red,blue);
+	-webkit-background-clip:text;
+    -webkit-background-size:500%;
+	animation: animate 5s linear infinite ;
+	background-size: 500%;
+}
+@keyframes animate
+{
+	0%{background-position: 0 100%;}
+	50%{background-position: 100% 0;}
+	100%{background-position: 0 100%;}
+}
+section p
+{
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-family:cursive;
+	text-transform: uppercase;
+	text-shadow:2px 3px 4px black;	
+
+}
+.footer-dark {
+			padding:50px 0;
+			color:#111;
+			background-color:#282d32;
+		  }
+		  .item ul li a
+		  {
+			  font-weight: bold;
+		  }
+		   .item ul li a:hover
+		  {
+			  color: white;
+		  }
+		  
+		  .footer-dark h3 {
+			margin-top:0;
+			text-decoration: underline red 2px;
+			margin-bottom:12px;
+			font-weight:bold;
+			/* padding: 5px; */
+			font-size:16px;
+		  }
+		  
+		  .footer-dark ul {
+			padding:0;
+			list-style:none;
+			line-height:1.6;
+			font-size:14px;
+			margin-bottom:0;
+		  }
+		  
+		  .footer-dark ul a {
+			color:inherit;
+			text-decoration:none;
+			/* opacity:0.6; */
+		  }
+		  
+		  .footer-dark ul a:hover {
+			opacity:0.8;
+		  }
+		  .dark1
+		  {
+			  background-color: rgb(231, 182, 59);
+		  }
+		 #footer-email 
+		   {
+
+      text-decoration: none;
+    }
+	
+	.m {
+		line-height: 2.1;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		display: inline-block;
+		/* margin-left: 40px; */
+		padding: 0px;
+		width: 400px  ;
+		/* height: 300px; */
+	  }
+	  #copyright 
+	  {
+		  color: black;
+		  text-align: center;
+		  padding-top: 120px;
+	  }
+		  
+	  @media (max-width:991px) {
+			.footer-dark .item:not(.social) {
+			  text-align:center;
+			  padding-bottom:20px;
+			}
+		  }
+		  
+		  .footer-dark .item.text {
+			margin-bottom:30px;
+		  }
+		  
+		  @media (max-width:991px) {
+			.footer-dark .item.text {
+			  margin-bottom:0;
+			}
+		  }
+		  
+		  .footer-dark .item.text p {
+			/* opacity:0.6; */
+			margin-bottom:0;
+		  }
+		  
+		 
+		  
+		  @media (max-width:991px) {
+			.footer-dark .item.social {
+			  text-align:center;
+			  margin-top:20px;
+			}
+		  }
+		  
+		 
+		  
+		  .footer-dark .item.social > a:hover {
+			opacity:0.9;
+		  }
+		  
+		  .footer-dark #copyright {
+			text-align:center;
+			padding-top:20px;
+			/* opacity:0.3; */
+			font-size:20px;
+			margin-bottom:0;
+		  }
+		  @media (max-width:991px)
+		  {
+			  main
+			  {
+				width: 100%;
+				position: sticky;
+				height: 45vh;
+				display: flex;	
+				justify-content: center;
+				text-align: center;
+				align-items: center;
+				color:wheat;
+			  }
+			  section h3
+			  {
+				  font-size:30px ;
+			  }
+			  section h2
+				{	
+					font-size: 50px;
+				}
+				section p
+				{	
+					font-size: 20px;
+				}
+				#logo a img 
+					{
+	
+						/* float: left; */
+						width: 80px;
+						height: 80px;
+	
+	
+					}
+					/* .bart li
+					{
+						background-color:skyblue ;
+					} */
+					/* .button
+					{
+					
+					} */
+					/* .navlis ul
+					 {
+					 
+					 text-align: center;
+					 float: left;
+					 display: inline-flexbox;
+					 margin-left: 200px;
+					 position: static;
+					 padding-top: 100px;
+					 }  */
+				}
+				.content ul li
+    {
+    list-style:  circle;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 30px;
+    text-transform: uppercase;
+        color: rgb(224, 67, 9);
+}
+.sub
+    {
+        text-align: center;
+        background-color: darkgray;
+        font-family: fantasy;
+        letter-spacing: 1px;
+        color: rgb(204, 75, 16);
+    }
+	
+	#myBtn 
+{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  /* z-index: 99; */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+	</style>
+       
+    
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div class="bg-img">
+								<!-- go to top -->
+																																	
+	<div class="container-fluid">	
+	<div class="row">
+		<div class="col-md-20 " >
+			<nav class="navbar navbar navlis" >
+				<!-- <div class="container-fluid"> -->
+						
+													
+												<!-- BRAND AND TOGGLE START HERE -->
+																		
+	<div class="navbar-header " >
+		
+		<button type="button" class="navbar-toggle collapsed"id="btni-drop" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+				
+		<a class="navbar-brand col-md-20" href="index.html" id="nist_logo_name">NIST</a>
+		
+	</div> 
+										<!-- BRAND AND TOGGLE CLOSE HERE -->
+																			
+																																				
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="font-family: Oswald; font-size:large; text-align: center;" >
+		<div class="nav-navbar-nav ">
+			<ul class=" nav navbar-nav bart" >
+				<li><a  href="index.html"><i class="glyphicon glyphicon-home"></i> HOME </a> </li> 
+				<li><a class="" href="gallery.html"><i class=" glyphicon glyphicon-picture"></i> GALLERY </a> </li>
+				<li><a class="" href="course.html"><i class=" glyphicon glyphicon-book"></i> COURSES </a> </li>
+				<li><a class="" href="contact.html"><i class=" glyphicon glyphicon-phone-alt"></i> CONTACT </a> </li>
+				<li><a class="" href="about.html"><i class=" glyphicon glyphicon-info-sign"></i> ABOUT US </a> </li>		
+			</ul>
+								
+		</div>
+	</div>
+	</nav>
+	</div>							  
+	</div>
+	</nav>
+	</div>
+				 <!-- header item -->
+			
+				
+			
+	   
+	
+		<main>
+			<section>
+				<br>
+				<h3>welcome to</h3>
+				<div id="logo">
+					<a href="index.html"><img src="Image/logo.png" alt="LOGO"></a>
+				</div>
+				<h2>nist azamgarh</h2>
+				<p>work is worship</p>
+			
+				<form class="navbar-form  button" action="#bca.html">
+					<div class="form-group ">
+					  <input type="text" class="form-control" placeholder="Search"size="20">
+					</div>
+					<button type="submit" class="btn btn-primary">SEARCH</button>
+				  </form>			   					
+		</section>
+		</main>
+		</span>
+				 </div>
+			
+			
+	<br>
+	<br><br>
+
+
+<br>
+
+
+ 
+ <!-- Main-content -->
+ <div class="container">
+    <h1 class="sub">CONCEPT ON COMPUTER CONCEPTS(CCC)</h1>
+</div>
+<BR>
+ <div class=" container content bg-info img-rounded">
+    <h1 style="font-family:fantasy; ">CCC</h1>   
+    <img  src="Image/img.jpg" alt="img"width="200px"height="255"margin-top="20px"style="float:Right;border-radius:10px">
+    <ul>
+        <li>Level – Undergraduate</li>
+        <li>Duration – 3 months </li>
+        <li>Seats – 20</li>
+        
+    </ul>
+    <h1 style="font-family:fantasy;text-transform: uppercase; ">Eligibility Criteria </h1>
+    <li style="font-style: normal;font-family: sans-serif;font-weight: bold;
+    font-size: large;list-style-position: inside;list-style: none;margin-left: 35px; color: rgb(224, 67, 9)">
+        Passed 10+2 from recognized Board.
+        <br>There are no min. or max. requirements for filling the CCC application form.
+         </li>
+         <h1 style="font-family:fantasy;text-transform: uppercase;">About the nielit </h1>
+         <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 900;line-height: 30px;">
+             National Institute Of Electronics & Information Technology (NIELIT) is an autonomous society that works under the govt. of India to carry out human resourse development activities in the field pf Information,
+             Electronics & Communication Technology(IECT). <br>
+             NIELIT was formed in 1994 and was formerly known as DOEACC society. It is administered by the Ministry
+              of Eletronics And Information Technology of the government  Of India.It offers various programs related to IECT at diffent levels and CCC certificates course is one the digital literacy proograms offered by this Organization.
+         </p>
+        
+            
+            <h1 style="font-family:fantasy;text-transform: uppercase;">About the Programme </h1>
+            <ul>
+                <li>
+                    To enable students to have a holistic and all-round 
+                    grooming to be a thorough professional in the field of IT.
+               </li>
+                <li>
+                    To enable the ability to develop software solutions to problems across
+                    a broad range of application domains through analysis and design.
+                </li>
+                <li>
+                    To develop the ability to understand and analyze a given real-world problem and propose feasible computing solutions.
+                </li>
+                <li>
+                    To develop business analyst who analyze customer requirements, create high level design, implement and document robust
+                     and reliable software systems for Desktop / Network / Web / Mobile environment.
+                </li>
+                <li>
+                    To develop professionals who are able to use the techniques, skills and modern hardware and
+                     software tools necessary for development of innovative software solutions.
+                </li>
+            </ul>
+            <h1 style="font-family:fantasy;text-transform: uppercase">Syllabus </h1>  
+            <ul>
+                <li>
+                        BCC.
+                /
+                
+                    ECC.
+                </li>
+                <li>
+                    O Level/A Level/B Level/C Level.
+                </li>
+              
+            </ul>
+	
+		</div>
+<br><br>
+  <!-- footer -->
+  <div class="footer-dark dark1">
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class=" col-md-4 item ">
+                    <h3>&#9733;-ACADEMY-&#9733;</h3>
+                    <ul>
+                        <li><a href="course.html">COURSE</a></li><br>
+                        <li><a href="admission.html">ADDMISSION</a></li><br>
+                        <li><a href="#NOTICE">NOTICE</a></li><br>
+                        <li><a href="#campus">CAMPUS</a></li>
+                    </ul>
+                </div>
+                <div class=" col-md-4 item  ">
+                    <h3> &nbsp;&#9733;-ABOUT-&#9733;</h3>
+                    <ul>
+                        <li><a href="about.html">ABOUT INSTITUTE</a></li><br>
+                        <li><a href="about.html">ABOUT DIRECTOR</a></li><br>
+                        <li><a href="about.html">ABOUT H.O.D</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 item text">
+                    <div class="m">
+                    <h3>&#9733;-CONTACT US-&#9733;</h3>
+                    <!-- <h2 class="footer">----Contact Information----</h2> -->
+                    <b>Address:-</b><b>Nistha Institute Of Science & Technology Bhawarnath Azamgarh Uttar Pradesh<br> PinCode:-276001</b><br>
+                    <b>Email Us:-</b><a href="#" id="footer-email">nist1234@gmail.com</a><br>
+                    <b>Mobile No.:-9709346206</b>
+                </div>
+              </div>
+              
+              <p id="copyright">NIST © 2020-23</p>
+             
+            </div>
+            
+        </div>
+        
+    </footer>
+</div>
+
+<script>
+	var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() 
+	{
+  	if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
+	  	{
+    		mybutton.style.display = "block";
+  		} 
+  	else 
+  		{
+    		mybutton.style.display = "none";
+  		}
+	}
+
+// When the user clicks on the button, scroll to the top of the document
+	function topFunction() 
+	{
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+	}
+</script>				 s
+</body>
+</html>
